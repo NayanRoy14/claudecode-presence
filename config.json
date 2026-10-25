@@ -1,0 +1,37 @@
+{
+  "clientId": "1563779934273667153",
+
+  "images": {
+    "working": "https://cdn.qualit.ly/clawd-working-building.gif",
+    "thinking": "https://cdn.qualit.ly/clawd-working-typing.gif",
+    "compacting": "https://cdn.qualit.ly/clawd-working-typing.gif",
+    "shipped": "https://cdn.qualit.ly/clawd-working-building.gif",
+    "notification": "https://cdn.qualit.ly/clawd-notification.gif",
+    "idle": "https://cdn.qualit.ly/clawd-sleeping.gif"
+  },
+
+  "frames": {
+    "working": [
+      ["Working in {project}", "{tool} · {file} · {sessionTokens} tokens"],
+      ["Working in {project}", "{model} · +{sessionAdded} lines this session"]
+    ],
+    "thinking": [["Thinking in {project}", "{model} · {sessionPrompts} prompts · {sessionTokens} tokens"]],
+    "compacting": [["Compacting context in {project}", "{model} · {sessionPrompts} prompts"]],
+    "shipped": [["Shipped a commit · {project}", "{lastCommit}"]],
+    "notification": [["Waiting on you · {project}", "Permission needed"]],
+    "idle": [
+      ["Idle in {project}", "{model} · {todayHours} today"],
+      ["This week", "{weekHours} · {weekPrompts} prompts"],
+      ["This week", "{weekTokens} tokens"],
+      ["Code this week", "+{weekAdded} / -{weekRemoved} lines"],
+      ["Top language this week", "{topLang}"]
+    ]
+  },
+
+  "projects": {},
+  "githubButton": true,
+  "rotateSeconds": 12,
+  "hideAfterIdleMinutes": 0,
+  "staleMinutes": 30,
+  "exitAfterIdleSeconds": 60
+}
